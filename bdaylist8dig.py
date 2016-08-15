@@ -7,9 +7,9 @@ item_count = 0
 for d in range(1, 32):
     for m in range(1, 13):
         for y in range(1939 , 2020):
-            string = string + str(d).zfill(2) + str(m).zfill(2) + str(y)
+            string = string + str(d).zfill(2) + str(m).zfill(2) + str(y) + '\n'
             item_count += 1
-FILE.write(string+'\n')
+FILE.write(string)
 
 string=''
 FILE.close()
